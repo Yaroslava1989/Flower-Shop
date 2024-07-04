@@ -1,0 +1,73 @@
+.saleContent {
+    color: rgb(51, 51, 51);
+    position: absolute;
+    top: 104px;
+    left: 5%;
+    right: 5%;
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-height: 100%;
+    z-index: -1;
+}
+
+
+.background {
+    position: fixed; /*Fixed задаёт элемент на фиксированном месте на странице, независимо от прокрутки страницы. При использовании этого значения также можно задать параметры top , bottom , left и right , чтобы определить точное местоположение элемента. Пример использования свойства position со значением fixed */
+    z-index: -1; /*положение фона тела страници всегда сзади*/
+    top: 60vh;
+    left: -100px;
+    right: -100px;
+    height: 60vmax;
+    rotate: -6deg;
+    background: #f6edf2;
+}
+
+.cardContent {
+    max-width: 1382px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.floraButton {
+    display: flex;
+    gap: 10px;
+}
+
+.floraButton button{
+    font-family: sans-serif;
+    font-style: italic;
+    height: 40px;
+    text-transform: uppercase;
+    background: white;
+    cursor: pointer;
+    border: 1px solid #c9c8c8;
+}
+
+.saleCard {
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background: rgba(149, 21, 153, 0.13);
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.cardImg {
+    width: 400px;
+    max-height: 380px;
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+
+}
+
+.cardImg img  {
+    object-fit: cover;
+}
+

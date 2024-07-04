@@ -1,0 +1,48 @@
+.content {
+    color: rgb(51, 51, 51);
+    font-style: italic;
+    position: absolute;
+    top: 104px;
+    bottom: 44px;
+    left: 5%;
+    right: 5%;
+    overflow: hidden; /*1*/
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.contentImg {
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    background: url("./pione.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* растягиваем по ширине и высоте в 750 пикселя */
+    display: block; /* еперь картинка chrom-logo.svg отобразится, без этого свойства не отображается */
+
+}
+
+.contentText {
+    background: #f6edf2;
+    display: grid;
+    justify-items: center;
+    border-radius: 50% 0 50% 0;
+    padding: 50px;
+    box-shadow: inset 3px -3px 30px rgba(27, 234, 93, 0),
+     -3px 3px 30px rgba(239, 16, 255, 0.44);
+
+}
+
+.background {
+    position: fixed; /*Fixed задаёт элемент на фиксированном месте на странице, независимо от прокрутки страницы. При использовании этого значения также можно задать параметры top , bottom , left и right , чтобы определить точное местоположение элемента. Пример использования свойства position со значением fixed */
+    z-index: -1; /*положение фона тела страници всегда сзади*/
+    top: 60vh;
+    left: -100px;
+    right: -100px;
+    height: 60vmax;
+    rotate: -6deg;
+    background: #f6edf2;
+}

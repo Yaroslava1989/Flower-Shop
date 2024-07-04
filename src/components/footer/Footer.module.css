@@ -1,0 +1,14 @@
+.foot {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    font-size: 10px;
+    background: #f6edf2;
+}

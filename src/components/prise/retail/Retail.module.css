@@ -1,0 +1,28 @@
+.retailContent {
+
+    color: rgb(51, 51, 51);
+    font-style: italic;
+    position: absolute;
+    top: 104px;
+    left: 5%;
+    right: 5%;
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    height: 100%;/* позволяет включить вертикальную прокрутку страницы*/
+    z-index: -1;
+
+}
+
+.background {
+    position: fixed; /*Fixed задаёт элемент на фиксированном месте на странице, независимо от прокрутки страницы. При использовании этого значения также можно задать параметры top , bottom , left и right , чтобы определить точное местоположение элемента. Пример использования свойства position со значением fixed */
+    z-index: -1; /*положение фона тела страници всегда сзади*/
+    top: 60vh;
+    left: -100px;
+    right: -100px;
+    height: 60vmax;
+    rotate: -6deg;
+    background: #f6edf2;
+}
+

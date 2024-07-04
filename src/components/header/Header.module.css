@@ -1,0 +1,148 @@
+header {
+    font-size: 14px;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px; /* работает с display: flex. задаёт отступ между колонками. свойство чтобы елементы в контейнере не пересекались*/
+    align-items: center; /*вертикальное выравнивание*/
+    justify-content: space-between;/* горизонтальное выравнивание*/
+    padding: 0 16px;
+    border-bottom: 1px solid #ebebeb;
+    background: white;
+
+}
+
+a {
+    all: unset;
+}
+
+nav > img {
+    width: 40px;
+}
+
+nav > h1 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 34px;
+    color: #08a081;
+}
+
+.dropdown.location::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../../images/map-location (1).png');
+    background-repeat: no-repeat;
+    background-size: cover; /* растягиваем по ширине и высоте в 24 пикселя */
+    display: block; /* !!! теперь картинка chrom-logo.svg отобразится, без этого свойства не отображается */
+
+}
+
+.dropdown.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+
+.local {
+    display: flex;
+    gap: 10px;
+}
+
+
+.local > button {
+    background: #08a081;
+    height: 40px;
+    border-radius: 6px;
+    border: 0;
+    color: #f7f7f7;
+    font-family: inherit;
+    padding: 0 14px;
+    font-size: 16px;
+}
+
+
+.links {
+    list-style: none;
+    margin: 0 20px 0 auto;
+    padding: 0;
+    display: flex; /*1*/
+    flex-wrap: wrap; /*2= 1+2 контейнеры опускаются вниз при сжатии страницы*/
+    align-items: center;
+    gap: 20px;
+    color: #08a081;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.dropdown > a {
+    display: flex;
+    align-items: center;
+    height: 42px;
+}
+
+.dropdown > a > span {
+    font-size: 20px;
+    color: #08a081;
+    translate: 0 2px;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 4px 0;
+    display: grid;
+    background: #f6edf2;
+    opacity: 0;
+    visibility: visible;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: inset 3px -3px 30px rgba(27, 234, 93, 0.23),
+    -3px 3px 30px rgba(239, 16, 255, 0.44);
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    border-top: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    top: -7px;
+    right: 22px;
+    width: 12px;
+    height: 12px;
+    rotate: -45deg;
+}
+
+.dropdown:hover .menu {
+    opacity: 1;
+}
+
+.menu > a {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #08a081;
+}
+
+.menu > a:hover {
+    background: rgba(239, 16, 255, 0.32);
+
+}
+
