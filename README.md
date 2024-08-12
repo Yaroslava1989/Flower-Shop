@@ -15,9 +15,10 @@ optimization techniques were introduced to the components.
 ## Application structure
 
 Below is the diagram of the structure of the flower shop
-application.
-<img src="https://github.com/Yaroslava1989/Flower-Shop/blob/master/public/Untitled%20Diagram.jpg"/>
-
+application.\
+\
+<img src="https://github.com/Yaroslava1989/Flower-Shop/blob/master/public/Untitled%20Diagram.drawio.png"/>
+\
 
 ## Deploymen
 
