@@ -12,6 +12,13 @@ optimization techniques were introduced to the components.
 
 ### Author - Junior Frontend Developer Kondratenko Jaroslava.
 
+## Application structure
+
+Below is the diagram of the structure of the flower shop
+application.
+<img src="https://github.com/Yaroslava1989/Flower-Shop/blob/master/public/Untitled%20Diagram.jpg"/>
+
+
 ## Deploymen
 
 ### Libraries
